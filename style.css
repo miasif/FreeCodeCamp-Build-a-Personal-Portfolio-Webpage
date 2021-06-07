@@ -1,0 +1,214 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    --theme-color: 77;
+    background-color: hsl(var(--theme-color, 100), 50%, 90%);
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding-top: 10px;
+    z-index: 1;
+    background-color: hsl(var(--theme-color, 100), 50%, 90%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#navbar {
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--main-red);
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+    z-index: 10;
+    background-color: #be3144;
+}
+
+#navbar a {
+    margin: 4vw;
+    text-decoration: inherit;
+    color: rgb(255, 255, 255);
+}
+
+main section {
+    height: 100vh;
+}
+
+h1 {
+    margin-top: 19vh;
+    padding-top: 168px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 38px;
+}
+
+p {
+    color: #8e303e;
+    font-size: 20px;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#welcome-section {
+    min-height: 100px;
+    text-align: center;
+    background-color: #2d2f31;
+}
+
+#projects {
+    background-color: #435379;
+    padding-bottom: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+#projects h2 {
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 38px;
+}
+
+#projects-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 6vw;
+    grid-row-gap: 6vh;
+    max-width: 900px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    justify-items: center;
+    align-items: center;
+}
+
+#hr {
+    border-bottom: 4px solid white;
+    margin-bottom: 20px;
+}
+
+#projects img {
+    width: 302px;
+    height: 212px;
+}
+
+#projects-content a {
+    display: grid;
+    grid-template-rows: 1fr 35px;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    border-style: solid;
+    width: 300px;
+    height: 210px;
+    text-decoration: none;
+    color: black;
+    border-width: 2px;
+    border-style: outset;
+    border-color: hsl(var(--theme-color, 100), 0%, 20%);
+    background-color: hsl(var(--theme-color, 100), 0%, 95%);
+}
+
+#show-all {
+    border: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 25px;
+    text-align: center;
+    color: black;
+    border-color: hsl(var(--theme-color, 100), 50%, 72%);
+    background-color: hsl(var(--theme-color, 100), 0%, 95%);
+}
+
+#show-all:hover {
+    animation-name: show-all-bg;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes show-all-bg {
+    50% {
+        background-color: hsl(var(--theme-color, 100), 90%, 80%);
+        transform: scale(1.05);
+    }
+    100% {
+        background-color: hsl(var(--theme-color, 100), 50%, 87%);
+        transform: scale(1.1);
+    }
+}
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 280px;
+    background-color: #303841;
+}
+
+#contacts h2 {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    color: white;
+    font-size: 5.2em;
+}
+
+#contacts p {
+    margin-bottom: 30px;
+    color: #d3d4d5;
+    font-size: 1.8em;
+}
+
+#contacts-content {
+    padding: 130px;
+    font-size: 30px;
+    /* width: 50px; */
+    text-align: center;
+    text-decoration: none;
+    /* margin: 5px 2px; */
+    /* color: white; */
+    /* background: #3B5998; */
+    color: white;
+}
+
+#contacts-content a {
+    color: white;
+    text-decoration: none;
+}
+
+header,
+.main-section,
+footer {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+footer {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: #303841;
+    border-top: 5px solid red;
+}
+
+footer p {
+    color: white;
+}
